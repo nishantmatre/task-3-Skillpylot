@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots | Career Path</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">✦</span> skillpilots<span class="reg">®</span></div>
+    <a class="nav-item" href="#">⌂ <span>Dashboard</span></a>
+    <div class="section-label">PAGES</div>
+    <a class="nav-item" href="#">◉ <span>Self Assessment</span></a>
+    <a class="nav-item" href="#">▥ <span>College Assessment</span></a>
+    <a class="nav-item" href="#">▣ <span>Skill Assessment</span></a>
+    <a class="nav-item active" href="#">⑂ <span>Career Path</span></a>
+    <a class="nav-item" href="#">▣ <span>Mentor Connect</span></a>
+    <a class="nav-item" href="#">♧ <span>Mock Interview</span></a>
+    <a class="nav-item" href="#">▤ <span>Learning Materials</span></a>
+    <a class="nav-item" href="#">◎ <span>Opportunities</span></a>
+    <a class="nav-item" href="#">▧ <span>Resume</span></a>
+    <a class="nav-item" href="#">☑ <span>Applied Opportunities</span></a>
+    <a class="nav-item" href="#">♟ <span>Problem Statements</span></a>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">✦ skillpilots</div>
+      <div class="top-actions"><button aria-label="Theme" id="themeBtn">☾</button><button aria-label="Notifications">♧<sup>2</sup></button><button aria-label="Documents">▢</button><div class="avatar">JD</div></div>
+    </header>
+
+    <div class="content">
+      <section class="schedule panel">
+        <div class="panel-heading"><div><span class="heading-icon">▣</span> <b>Learning Schedule</b> <span class="level">Beginner</span></div></div>
+        <div class="legend"><span class="done-dot"></span> Done <span class="today-dot"></span> Today <span class="upcoming-dot"></span> Upcoming</div>
+        <div class="days">
+          <div class="day done"><span>✓</span><b>1</b></div><div class="day done"><span>✓</span><b>2</b></div>
+          <div class="day done"><span>✓</span><b>3</b></div><div class="day done"><span>✓</span><b>4</b></div>
+          <div class="day done"><span>✓</span><b>5</b></div><div class="day"><b>6</b></div>
+          <div class="day"><b>7</b></div><div class="day"><b>8</b></div><div class="day today"><b>9</b></div>
+          <div class="day"><b>10</b></div><div class="day"><b>11</b></div><div class="day"><b>12</b></div>
+          <div class="day"><b>13</b></div><div class="day"><b>14</b></div><div class="day"><b>15</b></div>
+          <div class="day"><b>16</b></div><div class="day"><b>17</b></div><div class="day"><b>18</b></div>
+          <div class="day"><b>19</b></div><div class="day"><b>20</b></div><div class="day"><b>21</b></div>
+        </div>
+        <div class="progress-row"><span>Learning progress</span><b>24%</b></div>
+        <div class="progress"><span></span></div>
+      </section>
+
+      <section class="focus panel">
+        <div class="focus-title"><span>▣</span><div><b>Today's Focus: HTTP Fundamentals &amp; Fetch API</b><small>Day 9 · 3 tasks</small></div></div>
+        <div class="task complete"><div><b>Understand HTTP requests and responses</b><small>Learn the basics of HTTP methods and status codes.</small></div><span class="status">✓ Completed</span></div>
+        <div class="task complete"><div><b>Explore Fetch API</b><small>Practice making a GET request from JavaScript.</small></div><span class="status">✓ Completed</span></div>
+        <div class="task current"><div><b>Build a Todo List using Fetch API</b><small>Create a page that fetches a list of dummy todos and displays them in a table.</small><div class="tags"><span>API consumption</span><span>DOM rendering</span></div></div><button class="primary" id="openSteps">🚀 Submit Project</button></div>
+      </section>
+    </div>
+    <footer>© 2026 All Rights Reserved SkillPilots® Global Pvt. Ltd. | Designed &amp; Developed by SkillPilots® Global Pvt. Ltd.</footer>
+  </main>
+
+  <div class="overlay" id="stepsModal">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <h2 id="modalTitle"><span class="info">i</span> Task Implementation Steps</h2>
+      <p class="intro">Create a page that fetches a list of dummy todos and displays them in a table.</p>
+      <ol>
+        <li>Add an empty table element to the HTML.</li>
+        <li>Write a fetch call to retrieve an array of todo objects.</li>
+        <li>Iterate over the data and insert rows with title and completion status.</li>
+        <li>Apply basic CSS to make the table readable.</li>
+      </ol>
+      <button class="review" id="reviewBtn">I've Reviewed the Steps</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
